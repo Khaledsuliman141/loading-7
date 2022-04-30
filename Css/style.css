@@ -1,0 +1,88 @@
+*{ box-sizing: border-box;}
+
+body {
+    background-color: #bb1515;
+    margin: 0 auto;
+    padding: 20px;
+    color: #dd9696;
+    text-align: center;
+}
+
+/* Start Header */
+
+header {
+    padding: 50px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #dd9696;
+    text-shadow: 2px 4px 10px #101010;
+}
+
+/* Start Loading */
+
+.load-wrapp {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #d8d8d8;
+}
+
+.spinner {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 45px auto;
+}
+
+.bubble-1,.bubble-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #4b9cdb;
+}
+
+.bubble-2 {top: auto;bottom: 0;}
+
+
+/* Animation */
+
+
+.load-7 .spinner {
+  animation: loading7 2s linear infinite;
+}
+.load-7 .bubble-1,
+.load-7 .bubble-2 {
+  animation: dance 2s ease-in-out infinite;
+}
+.load-7 .bubble-2 {
+  animation-delay: -1s;
+}
+
+@keyframes loading7 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+
+/*start footer */
+footer{margin-top: 200px;}
